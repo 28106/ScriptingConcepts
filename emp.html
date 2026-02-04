@@ -1,0 +1,32 @@
+<html>
+<script>
+class Employee{
+	constructor(id, name, salary) {
+	this.id= id;
+	this.name = name;
+	this.salary = salary;
+	}
+	
+	display() {
+	document.write("Employee Id:"+ this.id +"<br>");
+	document.write("Name is :"+ this.name+ "<br>");
+	document.write("Salary :"+this.salary+"<br>");
+	
+	}
+	}
+
+
+let id = (prompt("Enter Id"));
+let name = (prompt("Enter Name:"));
+let salary = parseInt(prompt("Enter salary:"));
+
+
+let emp = new Employee(id, name, salary);
+
+
+emp.display();
+
+
+</script>
+
+<html>

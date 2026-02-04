@@ -1,0 +1,95 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+
+    
+</head>
+<body>
+    <h4>Hello to js</h4>
+	<script >
+	
+let num1 = parseInt(prompt("Enter the first number"));
+let num2 = parseInt(prompt("Enter the second number"));
+
+
+        let opr = prompt("Enter an operator );
+
+        let msg;
+
+      
+        switch(opr) {
+            case "+":
+                msg = num1 + num2;
+                break;
+            case "-":
+                msg = num1 - num2;
+                break;
+            case "*":
+                msg = num1 * num2;
+                break;
+            case "/":
+                msg = num1 / num2;
+                break;
+            default:
+                msg = "Invalid operator!";
+        }
+
+  
+        console.log("Message:", msg);
+
+	</script>
+</body>
+</html-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h4>Hello to JS</h4>
+    <script>
+        // Get numbers from user
+        let num1 = parseInt(prompt("Enter the first number"));
+        let num2 = parseInt(prompt("Enter the second number"));
+
+        // Get operator from user
+        let opr = prompt("Enter an operator (+, -, *, /)");
+
+        let msg;
+
+        // Perform calculation
+        switch(opr) {
+            case "+":
+                msg = num1 + num2;
+                break;
+            case "-":
+                msg = num1 - num2;
+                break;
+            case "*":
+                msg = num1 * num2;
+                break;
+            case "/":
+                if (num2 === 0) {
+                    msg = "Cannot divide by zero!";
+                } else {
+                    msg = num1 / num2;
+                }
+                break;
+            default:
+                msg = "Invalid operator!";
+        }
+
+        // Output result
+        console.log("Result:", msg);
+        alert("Result: " + msg);
+    </script>
+</body>
+</html>
