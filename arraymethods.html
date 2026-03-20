@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Methods</title>
+</head>
+<body>
+<script>
+// Creating an array
+let arr = [10, 20, 30, 40, 50];
+document.write("<h3>Original Array:</h3>");
+document.write(arr + "<br><br>");
+// 1. push() - adds element at the end
+arr.push(60);
+document.write("After push(60): " + arr + "<br>");      //After push(60): 10,20,30,40,50,60
+// 2. pop() - removes last element
+arr.pop();
+document.write("After pop(): " + arr + "<br>");        //After pop(): 10,20,30,40,50// 3. unshift() - adds element at the beginning
+arr.unshift(5);
+document.write("After unshift(5): " + arr + "<br>");         //After unshift(5): 5,10,20,30,40,50
+// 4. shift() - removes first element
+arr.shift();
+document.write("After shift(): " + arr + "<br><br>");         // After shift(): 10,20,30,40,50
+// 5. length - number of elements
+document.write("Length of array: " + arr.length + "<br><br>");     //Length of array: 5
+// 6. indexOf() - returns index of element
+document.write("Index of 50: " + arr.indexOf(50) + "<br>");          //Index of 30: 2
+// 8. concat() - combines arrays
+let arr2 = [70, 80];
+let newArr = arr.concat(arr2);
+document.write("After concat: " + newArr + "<br><br>");            //After concat: 10,20,35,40,50,70,80
+// 9. join() - converts array to string
+document.write("After join('-'): " + arr.join("-") + "<br><br>");          // After join('-'): 10-20-35-40-50
+
+
+// 10. forEach() - executes function for each element
+document.write("Using forEach():<br>");
+arr.forEach(function(value) {
+    document.write(value + "<br>");
+});
+document.write("<br>");   
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<body>
+
+Enter Username:
+<input type="text" id="user">
+<button onclick="checkUser()">Check</button>
+
+<p id="msg"></p>
+
+<script>
+function checkUser() {
+    var u = document.getElementById("user").value;
+
+    try {
+        if (u == "") {
+            throw "Username cannot be empty";
+        }
+        document.getElementById("msg").innerHTML = "Valid username";
+    }
+    catch (e) {
+        document.getElementById("msg").innerHTML = "Error: " + e;
+    }
+}
+</script>
+
+</body>
+</html>

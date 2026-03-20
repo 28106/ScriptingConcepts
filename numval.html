@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Enter Number:
+<input type="text" id="num">
+<button onclick="checkNumber()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function checkNumber() {
+    let n = document.getElementById("num").value;
+
+    if (n == "") {
+        document.getElementById("result").innerHTML = "Field must not be empty";
+    }
+    else if (isNaN(n)) {
+        document.getElementById("result").innerHTML = "Only numbers allowed";
+    }
+    else {
+        document.getElementById("result").innerHTML = "Valid number";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<body>
+
+<form onsubmit="return check()">
+Number:
+<input type="text" id="num"><br><br>
+
+Image:
+<input type="file" id="img"><br><br>
+
+<button type="submit">Submit</button>
+</form>
+
+<script>
+function check() {
+    var n = document.getElementById("num").value;
+    var i = document.getElementById("img").value;
+
+    if (n == "") {
+        alert("Number empty");
+        return false;
+    }
+
+    if (isNaN(n)) {
+        alert("Only digits allowed");
+        return false;
+    }
+
+    if (i == "") {
+        alert("Select image");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</body>
+</html>

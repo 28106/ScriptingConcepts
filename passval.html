@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<form onsubmit="return checkPassword()">
+Password:
+<input type="password" id="pass">
+<button type="submit">Submit</button>
+</form>
+
+<script>
+function checkPassword() {
+    var p = document.getElementById("pass").value;
+
+    if (p == "") {
+        alert("Password must not be empty");
+        return false;
+    }
+
+    if (p.length < 6) {
+        alert("Password must be at least 6 characters");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</body>
+</html>

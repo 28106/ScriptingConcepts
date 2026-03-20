@@ -1,0 +1,27 @@
+<html>
+<body>
+
+Enter Age:
+<input type="text" id="age">
+<button onclick="checkAge()">Check</button>
+
+<p id="msg"></p>
+
+<script>
+function checkAge() {
+    var age = document.getElementById("age").value;
+
+    try {
+        if (age < 18) {
+            throw "Age must be 18 or above";
+        }
+        document.getElementById("msg").innerHTML = "Access allowed";
+    }
+    catch (e) {
+        document.getElementById("msg").innerHTML = "Error: " + e;
+    }
+}
+</script>
+
+</body>
+</html>

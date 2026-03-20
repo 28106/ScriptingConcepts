@@ -1,0 +1,16 @@
+<html>
+<body>
+
+Type here:
+<input type="text" id="text" onkeyup="countChars()">
+<p id="result">Characters: 0</p>
+
+<script>
+function countChars() {
+    var t = document.getElementById("text").value;
+    document.getElementById("result").innerHTML = "Characters: " + t.length;
+}
+</script>
+
+</body>
+</html>

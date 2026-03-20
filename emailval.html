@@ -1,0 +1,25 @@
+<html>
+<body>
+
+Email:
+<input type="text" id="email">
+<button onclick="checkEmail()">Check</button>
+
+<script>
+function checkEmail() {
+    var email = document.getElementById("email").value;
+
+    if (email == "") {
+        alert("Email is empty");
+    }
+    else if (email.indexOf("@") == -1) {
+        alert("Invalid email");
+    }
+    else {
+        alert("Valid email");
+    }
+}
+</script>
+
+</body>
+</html>

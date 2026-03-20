@@ -1,0 +1,38 @@
+<html>
+<body>
+
+<h3>Division Program</h3>
+
+Number 1:
+<input type="text" id="num1"><br><br>
+
+Number 2:
+<input type="text" id="num2"><br><br>
+
+<button onclick="divide()">Divide</button>
+
+<p id="result"></p>
+
+<script>
+function divide() {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+
+    try {
+        if (b == 0) {
+            throw "Cannot divide by zero";
+        }
+        var c = a / b;
+        document.getElementById("result").innerHTML = "Result: " + c;
+    }
+    catch (error) {
+        document.getElementById("result").innerHTML = "Error: " + error;
+    }
+    finally {
+        console.log("Division attempt finished");
+    }
+}
+</script>
+
+</body>
+</html>

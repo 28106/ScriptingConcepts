@@ -1,0 +1,41 @@
+<html>
+<style>
+	body {
+	text-align: center;
+	
+	}
+	h1{
+		color: "blue";
+	}
+
+</style>
+
+<h1>
+
+  Hello World!
+
+</h1>
+
+<p>Choose Subject:</p>
+<select id="hi" onchange="Hello()">
+	<option value="Data Structure">Data Structure
+	<option value="System Design">System Design
+	<option value="Computer Network">Computer Network
+	<option value="Operating System">Operating System
+	<option value="OOP">OOP
+</select>
+
+<p id = "sudo"></p>
+
+
+<script>
+
+	function Hello() {
+	let x = document.getElementById("hi").value;
+	document.getElementById("sudo").innerHTML = "Selected Subject:"+ x;
+	
+	}
+
+</script>
+
+</html>

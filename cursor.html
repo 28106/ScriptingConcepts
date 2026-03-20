@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<input type="text" 
+       onfocus="enterMsg()" 
+       onblur="leaveMsg()">
+
+<p id="msg"></p>
+
+<script>
+function enterMsg() {
+    document.getElementById("msg").innerHTML = "Cursor entered the field";
+}
+
+function leaveMsg() {
+    document.getElementById("msg").innerHTML = "Cursor left the field";
+}
+</script>
+
+</body>
+</html>
